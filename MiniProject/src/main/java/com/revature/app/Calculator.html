@@ -1,0 +1,66 @@
+
+
+<!DOCTYPE>
+<html>
+<head>
+   <title>Simple Calculator</title>
+</head>
+<body>
+<h1 align="center" style="background-color:DodgerBlue;">Simple Calculator</h1>
+<p style="background-color:rgb(96, 153, 209);">
+<br><br>
+<br><br>
+   <div style="background: rgb(0, 128, 255); border: 2px solid #c04d4d;">
+        <p style="margin: 15px; line-height: 1.5; text-align: center;">
+          <form action="http://localhost:8080/Calculator" method="GET">
+ <table align="center" >
+ 		<thead>
+ 			 <tr>
+ 				<th class="text-center">First Number</th>
+				<th class="text-center">Operation</th>
+				<th class="text-center">Second Number</th>
+			</tr>
+		</thead>
+			<tbody>
+				<tr>
+		<th><input type="number" step="0.01" id="num1" name="num1" placeholder="First Number" /></th>
+<!-- <th><div>
+ <input type="radio" id="+" name="operator" value="+"							Simple input page
+         checked>															
+ <label for="+">+</label>													select element below with
+</div>																		multiple size of 4 to have all operators
+<div>																		available to choose from, looked better and
+  <input type="radio" id="-" name="operator" value="-">						was easier then pulled down select and radio buttons.
+  <label for="-">-</label>
+</div>
+<div>
+  <input type="radio" id="/" name="operator" value="/">
+  <label for="/">/</label>
+</div>
+<div>
+  <input type="radio" id="*" name="operator" value="*">
+  <label for="*">*</label>
+</div>
+	</th>	-->	  <th><select multiple size="4"  name="operator" id="operator"> 
+    				<option>  +  </option>
+    				<option>  -  </option>
+   					<option>  /  </option>
+   					<option>  *  </option>
+				</select></th>
+		<th><input type="number" step="0.01" id="num2" name="num2" placeholder="Second Number" /></th>
+		
+		    </tbody>
+ </table>
+ 
+ <br><br>
+ <center>
+<button type="submit" >Calculate</button>
+</center>
+</form>
+     
+        
+</div>
+
+
+</body>
+</html>
